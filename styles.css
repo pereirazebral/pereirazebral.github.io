@@ -1,0 +1,46 @@
+body{
+    background-color: #eee;
+}
+.no-icon .accordion-button::after{
+    display: none;
+}
+
+.h-100-vh{
+    height: 100vh;
+}
+
+.input-group-append {
+    cursor: pointer;
+}
+
+.collapse-02 .card {
+    width: 300px;
+}
+
+.collapse-02 .card .card-description{
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.step-02-comunicacao-protocolo-sinistro,
+.step-03-comunicacao-protocolo-sinistro{
+    display: none;
+}
+
+.step-02-comunicacao-protocolo-sinistro.active,
+.step-03-comunicacao-protocolo-sinistro.active{
+    display: block;
+}
+
+@media(max-width:768px){
+    .container{
+        padding: 0;
+    }
+    .accordion-button{
+        justify-content: center;
+        text-align: center;
+    }
+    .collapse-02 .card {
+        width: 100%;
+    }
+}
