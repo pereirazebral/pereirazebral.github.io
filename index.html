@@ -24,17 +24,17 @@
                         <div class="accordion accordion-01 no-icon mb-3" id="accordion-01">
                             <!--  -->
                             <div class="accordion-item shadow">
-                                <h2 class="accordion-header" id="headingOne">
+                                <h2 class="accordion-header" id="heading-01">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-01">
                                         Comunicação de Protocolo de Sinistro (Segurado)
                                     </button>
                                 </h2>
                                 <!--  -->
-                                <div id="collapse-01" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion-01">
+                                <div id="collapse-01" class="accordion-collapse collapse show" aria-labelledby="heading-01" data-bs-parent="#accordion-01">
                                     <div class="accordion-body">
                                         <div class="shadow p-3 mb-3 bg-body rounded">
-                                            <h6>Tipo de seguro</h6>    
-                                            <select id="select-seguro" class="form-select" 
+                                            <h6 class="text-center">Selecione o tipo de seguro</h6>    
+                                            <!-- <select id="select-seguro" class="form-select" 
                                                 aria-label="type-safe select-seguro"
                                                 onchange="onchangeSeguro('select-seguro')">
                                                 <option selected>Selecione o tipo de seguro</option>
@@ -48,7 +48,82 @@
                                                 <option value="8">Aluguel</option>
                                                 <option value="9">Risco Nomeados</option>
                                                 <option value="10">Equipamentos</option>
-                                            </select>
+                                            </select> -->
+
+                                            <div class="grid-select-insurance">
+                                                <div class="card card-insurance-1" onclick="onClickCardInsurance(1);">
+                                                    <div class="card-body">
+                                                        <i class="bi bi-building"></i>
+                                                        <h6 class="card-title mt-0 mb-0">Empresa</h6>
+                                                    </div>
+                                                </div>
+                                                <!--  -->
+                                                <div class="card card-insurance-2" onclick="onClickCardInsurance(2);">
+                                                    <div class="card-body">
+                                                        <i class="bi bi-house-fill"></i>
+                                                        <h6 class="card-title mt-0 mb-0">Condominio</h6>
+                                                    </div>
+                                                </div>
+                                                <!--  -->
+                                                <div class="card card-insurance-3" onclick="onClickCardInsurance(3);">
+                                                    <div class="card-body">
+                                                        <i class="bi bi-house"></i>
+                                                        <h6 class="card-title mt-0 mb-0">Residência</h6>
+                                                    </div>
+                                                </div>
+                                                <!--  -->
+                                                <div class="card card-insurance-4" onclick="onClickCardInsurance(4);">
+                                                    <div class="card-body">
+                                                        <i class="bi bi-bicycle"></i>
+                                                        <h6 class="card-title mt-0 mb-0">Automóvel</h6>
+                                                    </div>
+                                                </div>
+                                                <!--  -->
+                                                <div class="card card-insurance-5" onclick="onClickCardInsurance(5);">
+                                                    <div class="card-body">
+                                                        <i class="bi bi-clipboard-check"></i>
+                                                        <h6 class="card-title mt-0 mb-0">Garantia</h6>
+                                                    </div>
+                                                </div>
+                                                <!--  -->
+                                                <div class="card card-insurance-6" onclick="onClickCardInsurance(6);">
+                                                    <div class="card-body">
+                                                        <i class="bi bi-diamond-half"></i>
+                                                        <h6 class="card-title mt-0 mb-0">Risco de Engenharia</h6>
+                                                    </div>
+                                                </div>
+                                                <!--  -->
+                                                <div class="card card-insurance-7" onclick="onClickCardInsurance(7);">
+                                                    <div class="card-body">
+                                                        <i class="bi bi-bank"></i>
+                                                        <h6 class="card-title mt-0 mb-0">Garantia Judicial</h6>
+                                                    </div>
+                                                </div>
+                                                <!--  -->
+                                                <div class="card card-insurance-8" onclick="onClickCardInsurance(8);">
+                                                    <div class="card-body">
+                                                        <i class="bi bi-cash"></i>
+                                                        <h6 class="card-title mt-0 mb-0">Aluguel</h6>
+                                                    </div>
+                                                </div>
+                                                <!--  -->
+                                                <div class="card card-insurance-9" onclick="onClickCardInsurance(9);">
+                                                    <div class="card-body">
+                                                        <i class="bi bi-graph-down"></i>
+                                                        <h6 class="card-title mt-0 mb-0">Risco Nomeados</h6>
+                                                    </div>
+                                                </div>
+                                                <!--  -->
+                                                <div class="card card-insurance-10" onclick="onClickCardInsurance(10);">
+                                                    <div class="card-body">
+                                                        <i class="bi bi-gear-fill"></i>
+                                                        <h6 class="card-title mt-0 mb-0">Equipamentos</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
                                         </div>
                                         <!--  -->
                                         <div class="shadow p-3 mb-3 bg-body rounded step-02-comunicacao-protocolo-sinistro">
@@ -158,13 +233,13 @@
                         <div class="accordion accordion-02 no-icon mb-3 step-03-comunicacao-protocolo-sinistro" id="accordion-02">
                             <!--  -->
                             <div class="accordion-item shadow">
-                                <h2 class="accordion-header" id="headingOne">
+                                <h2 class="accordion-header" id="heading-02">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-01">
                                         Documentos do Segurado
                                     </button>
                                 </h2>
                                 <!--  -->
-                                <div id="collapse-02" class="accordion-collapse collapse collapse-02 show" aria-labelledby="headingOne" data-bs-parent="#accordion-02">
+                                <div id="collapse-02" class="accordion-collapse collapse collapse-02 show" aria-labelledby="heading-02" data-bs-parent="#accordion-02">
                                     <div class="accordion-body">
                                         <div class="shadow p-3 bg-body rounded">
                                             <div class="d-flex flex-wrap justify-content-start gap-2">

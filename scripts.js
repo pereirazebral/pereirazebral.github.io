@@ -20,6 +20,11 @@ function getSelectorAll (selector){
     return document.querySelectorAll(`${selector}`)
 }
 
+
+function getSelector (selector){
+    return document.querySelector(`${selector}`)
+}
+
 function setValueSelector(selector, value) {
     return document.querySelector(`#${selector}`).value = value
 }
@@ -113,6 +118,24 @@ function onchangeSeguro(selector){
     
 }
 
+function onClickCardInsurance(value){
+    
+    let cardActive = getSelector(`.card.active`)
+    cardActive && setRemoveCssClass(cardActive, 'active')
+
+    let card = getSelector(`.card-insurance-${value}`)
+    card && setAddCssClass(card, 'active')
+    
+    let selectorStep02 = Array.from(getSelectorAll('.step-02-comunicacao-protocolo-sinistro'))
+    selectorStep02.map((item) => {
+        if(value >= 1){
+            setAddCssClass(item, 'active')
+        }else{
+            setRemoveCssClass(item, 'active')
+        }    
+    })
+} 
+ 
 function setAddCssClass(selector,CssClass){
     selector.classList.add(CssClass);
 }

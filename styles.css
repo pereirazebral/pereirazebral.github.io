@@ -32,6 +32,46 @@ body{
     display: block;
 }
 
+.grid-select-insurance{
+    border: 0px solid #000;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    max-width: 550px;
+    margin: auto;
+    gap: 10px;
+}
+
+.grid-select-insurance .card{
+    width: 100px;
+    cursor: pointer;
+    transition: ease-in 0.3s;
+}
+
+.grid-select-insurance .card:hover,
+.grid-select-insurance .card.active{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.grid-select-insurance .card.active{
+    border-color: #86b7fe;
+}
+
+.grid-select-insurance .card-title{
+    font-size: 12px;
+    text-align: center;
+}
+
+.grid-select-insurance .card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.grid-select-insurance .card i{
+    font-size: 30px;
+}
+
 @media(max-width:768px){
     .container{
         padding: 0;
@@ -42,5 +82,23 @@ body{
     }
     .collapse-02 .card {
         width: 100%;
+    }
+
+    .grid-select-insurance{
+        grid-template-columns: repeat(5,1fr);
+        width: 100%;
+        gap: 5px;
+        overflow: scroll;
+    }
+
+    .grid-select-insurance .card i{
+        font-size: 20px;
+    }
+
+    .grid-select-insurance .card{
+        width: 80px;
+    }
+    .grid-select-insurance .card-title{
+        font-size: 10px;
     }
 }
