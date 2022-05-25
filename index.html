@@ -19,272 +19,146 @@
     <body>
         <div class="container">
             <div class="container-fluid h-100-vh">
-                
                 <div class="row align-items-center">
-                        <div class="accordion accordion-01 no-icon mb-3" id="accordion-01">
-                            <!--  -->
-                            <div class="accordion-item shadow">
-                                <h2 class="accordion-header" id="heading-01">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-01">
-                                        Comunicação de Protocolo de Sinistro (Segurado)
-                                    </button>
-                                </h2>
-                                <!--  -->
-                                <div id="collapse-01" class="accordion-collapse collapse show" aria-labelledby="heading-01" data-bs-parent="#accordion-01">
-                                    <div class="accordion-body">
-                                        <div class="shadow p-3 mb-3 bg-body rounded">
-                                            <h6 class="text-center">Selecione o tipo de seguro</h6>    
-                                            <!-- <select id="select-seguro" class="form-select" 
-                                                aria-label="type-safe select-seguro"
-                                                onchange="onchangeSeguro('select-seguro')">
-                                                <option selected>Selecione o tipo de seguro</option>
-                                                <option value="1">Empresa</option>
-                                                <option value="2">Condominio</option>
-                                                <option value="3">Residência</option>
-                                                <option value="4">Automóvel</option>
-                                                <option value="5">Garantia</option>
-                                                <option value="6">Risco de Engenharia</option>
-                                                <option value="7">Garantia Judicial</option>
-                                                <option value="8">Aluguel</option>
-                                                <option value="9">Risco Nomeados</option>
-                                                <option value="10">Equipamentos</option>
-                                            </select> -->
-
-                                            <div class="grid-select-insurance">
-                                                <div class="card card-insurance-1" onclick="onClickCardInsurance(1);">
-                                                    <div class="card-body">
-                                                        <i class="bi bi-building"></i>
-                                                        <h6 class="card-title mt-0 mb-0">Empresa</h6>
-                                                    </div>
-                                                </div>
-                                                <!--  -->
-                                                <div class="card card-insurance-2" onclick="onClickCardInsurance(2);">
-                                                    <div class="card-body">
-                                                        <i class="bi bi-house-fill"></i>
-                                                        <h6 class="card-title mt-0 mb-0">Condominio</h6>
-                                                    </div>
-                                                </div>
-                                                <!--  -->
-                                                <div class="card card-insurance-3" onclick="onClickCardInsurance(3);">
-                                                    <div class="card-body">
-                                                        <i class="bi bi-house"></i>
-                                                        <h6 class="card-title mt-0 mb-0">Residência</h6>
-                                                    </div>
-                                                </div>
-                                                <!--  -->
-                                                <div class="card card-insurance-4" onclick="onClickCardInsurance(4);">
-                                                    <div class="card-body">
-                                                        <i class="bi bi-bicycle"></i>
-                                                        <h6 class="card-title mt-0 mb-0">Automóvel</h6>
-                                                    </div>
-                                                </div>
-                                                <!--  -->
-                                                <div class="card card-insurance-5" onclick="onClickCardInsurance(5);">
-                                                    <div class="card-body">
-                                                        <i class="bi bi-clipboard-check"></i>
-                                                        <h6 class="card-title mt-0 mb-0">Garantia</h6>
-                                                    </div>
-                                                </div>
-                                                <!--  -->
-                                                <div class="card card-insurance-6" onclick="onClickCardInsurance(6);">
-                                                    <div class="card-body">
-                                                        <i class="bi bi-diamond-half"></i>
-                                                        <h6 class="card-title mt-0 mb-0">Risco de Engenharia</h6>
-                                                    </div>
-                                                </div>
-                                                <!--  -->
-                                                <div class="card card-insurance-7" onclick="onClickCardInsurance(7);">
-                                                    <div class="card-body">
-                                                        <i class="bi bi-bank"></i>
-                                                        <h6 class="card-title mt-0 mb-0">Garantia Judicial</h6>
-                                                    </div>
-                                                </div>
-                                                <!--  -->
-                                                <div class="card card-insurance-8" onclick="onClickCardInsurance(8);">
-                                                    <div class="card-body">
-                                                        <i class="bi bi-cash"></i>
-                                                        <h6 class="card-title mt-0 mb-0">Aluguel</h6>
-                                                    </div>
-                                                </div>
-                                                <!--  -->
-                                                <div class="card card-insurance-9" onclick="onClickCardInsurance(9);">
-                                                    <div class="card-body">
-                                                        <i class="bi bi-graph-down"></i>
-                                                        <h6 class="card-title mt-0 mb-0">Risco Nomeados</h6>
-                                                    </div>
-                                                </div>
-                                                <!--  -->
-                                                <div class="card card-insurance-10" onclick="onClickCardInsurance(10);">
-                                                    <div class="card-body">
-                                                        <i class="bi bi-gear-fill"></i>
-                                                        <h6 class="card-title mt-0 mb-0">Equipamentos</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-
-                                        </div>
-                                        <!--  -->
-                                        <div class="shadow p-3 mb-3 bg-body rounded step-02-comunicacao-protocolo-sinistro">
-                                            <div class="row">
-                                                <div class="col-sm-12 col-lg-6">
-                                                    <h6>Data da ocorrência</h6>
-                                                    <input type="text" 
-                                                        id="datepicker" 
-                                                        class="form-control datepicker" 
-                                                        placeholder="DD/MM/AAAA"
-                                                        onkeyup="onkeyupDate('datepicker')"
-                                                        maxlength="10">
-                                                </div>
-                                                <div class="col-sm-12 pt-3 col-lg-6 pt-lg-0">
-                                                    <h6>Hora da ocorrência</h6>
-                                                    <input type="text" 
-                                                        id="timepicker" 
-                                                        class="form-control" 
-                                                        placeholder="HH:MM"
-                                                        onkeyup="onkeyupTime('timepicker')"
-                                                        maxlength="5">                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--  -->
-                                        <div class="shadow p-3 mb-3 bg-body rounded step-02-comunicacao-protocolo-sinistro">
-                                            <h6 class="text-center pt-2 pb-3">Informe ums dos campos a baixo para localização da apólice</h6>
-                                            <!--  -->
-                                            <div class="row">
-                                                <h6>Estipulante/Subestipulante</h6>
-                                                <div class="col-sm-4 col-lg-3">
-                                                    <input type="text" 
-                                                        id="estipulante-subestipulante-cpf-cnpj" 
-                                                        class="form-control estipulante-subestipulante-cpf-cnpj" 
-                                                        placeholder="CPF/CNPJ"
-                                                        onkeyup="onkeyupCPFOrCNPJ('estipulante-subestipulante-cpf-cnpj')"
-                                                        maxlength="18">
-                                                </div>
-                                                <div class="col-sm-7 pt-3 col-lg-8 pt-lg-0">
-                                                    <input type="text" 
-                                                        id="estipulante-subestipulante-name" 
-                                                        class="form-control estipulante-subestipulante-name" 
-                                                        placeholder="NOME"
-                                                        disabled>                                                    
-                                                </div>
-                                                <div class="col-sm-1 pt-3 col-lg-1 pt-lg-0 ps-sm-0 text-center d-grid">
-                                                    <button type="button" 
-                                                        class="btn btn-primary"
-                                                        onclick="searchCPForCNPH('estipulante-subestipulante-cpf-cnpj', 'estipulante-subestipulante-name')">
-                                                        <i class="bi bi-search"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <!--  -->
-                                            <div class="row pt-4">
-                                                <h6>Segurado/Sinistrado</h6>
-                                                <div class="col-sm-4 col-lg-3">
-                                                    <input type="text" 
-                                                        id="segurado-sinistrado-cpf-cnpj"
-                                                        class="form-control segurado-sinistrado-cpf-cnpj"
-                                                        placeholder="CPF/CNPJ"
-                                                        onkeyup="onkeyupCPFOrCNPJ('segurado-sinistrado-cpf-cnpj')"
-                                                        maxlength="18">
-                                                </div>
-                                                <div class="col-sm-7 pt-3 col-lg-8 pt-lg-0">
-                                                    <input type="text" 
-                                                        id="segurado-sinistrado-name" 
-                                                        class="form-control segurado-sinistrado-name" 
-                                                        placeholder="NOME" 
-                                                        disabled>                                                    
-                                                </div>
-                                                <div class="col-sm-1 pt-3 col-lg-1 pt-lg-0 ps-sm-0 text-center d-grid">
-                                                    <button type="button" 
-                                                        class="btn btn-primary"
-                                                        onclick="searchCPForCNPH('segurado-sinistrado-cpf-cnpj', 'segurado-sinistrado-name')">
-                                                        <i class="bi bi-search"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <!--  -->
-                                            <div class="row pt-4">
-                                                <div class="col-sm-6 col-lg-3">
-                                                    <h6>Apólice</h6>
-                                                    <input type="text" id="apolice" class="form-control" placeholder="">
-                                                </div>
-                                                <div class="col-sm-6 pt-3 col-lg-3 pt-lg-0">
-                                                    <h6>Certificado</h6>
-                                                    <input type="text" id="certificado" class="form-control" placeholder="">                                                    
-                                                </div>
-                                            </div>
-                                            <!--  -->
-                                            <div class="row pt-4 justify-content-md-center">
-                                                <div class="col-sm-12 col-lg-4 d-grid">
-                                                    <button type="button"
-                                                        class="btn btn-primary"
-                                                        onclick="onclickSearch()">
-                                                        Pesquisar
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="accordion accordion-01 no-icon mb-3" id="accordion-01">
                         <!--  -->
-                        <div class="accordion accordion-02 no-icon mb-3 step-03-comunicacao-protocolo-sinistro" id="accordion-02">
+                        <div class="accordion-item shadow">
+                            <h2 class="accordion-header" id="heading-01">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-01">
+                                    Protocolo de Sinistro (Filtro)
+                                </button>
+                            </h2>
                             <!--  -->
-                            <div class="accordion-item shadow">
-                                <h2 class="accordion-header" id="heading-02">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-01">
-                                        Documentos do Segurado
-                                    </button>
-                                </h2>
-                                <!--  -->
-                                <div id="collapse-02" class="accordion-collapse collapse collapse-02 show" aria-labelledby="heading-02" data-bs-parent="#accordion-02">
-                                    <div class="accordion-body">
-                                        <div class="shadow p-3 bg-body rounded">
-                                            <div class="d-flex flex-wrap justify-content-start gap-2">
-                                                <div class="card">
-                                                    <h6 class="card-header">Apólice: 123456789</h6>
-                                                    <div class="card-body">
-                                                        <h6 class="card-title mt-0 mb-0">Bootstrap Company LTDA</h6>
-                                                        <p class="card-description">39.935.349/0001-50</p>
-                                                        <div class="d-flex flex-column pt-2">
-                                                            <p class="card-description"><span class="fw-semibold">Ramo: </span> Seguro</p>
-                                                            <p class="card-description"><span class="fw-semibold">Produto: </span>Empresa</p>
-                                                        </div>
-                                                        <div class="d-flex pt-2">
-                                                            <p class="card-description"><span class="fw-semibold">Início: </span> 31/12/2022</p>
-                                                            <p class="card-description ps-3"><span class="fw-semibold">Fim: </span> 31/12/2023</p>
-                                                        </div>
-                                                        <div class="d-flex pt-2 justify-content-end">
-                                                            <button type="button" class="btn btn-primary btn-sm">
-                                                                <i class="bi bi-pencil-square"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--  -->
-                                                <div class="card">
-                                                    <h6 class="card-header">Apólice: 123456780</h6>
-                                                    <div class="card-body">
-                                                        <h6 class="card-title mt-0 mb-0">Bootstrap Da Silva Santos</h6>
-                                                        <p class="card-description">661.806.340-09</p>
-                                                        <div class="d-flex flex-column pt-2">
-                                                            <p class="card-description"><span class="fw-semibold">Ramo: </span> Seguro</p>
-                                                            <p class="card-description"><span class="fw-semibold">Produto: </span>Automóvel</p>
-                                                        </div>
-                                                        <div class="d-flex pt-2">
-                                                            <p class="card-description"><span class="fw-semibold">Início: </span> 01/01/2022</p>
-                                                            <p class="card-description ps-3"><span class="fw-semibold">Fim: </span> 01/01/2023</p>
-                                                        </div>
-                                                        <div class="d-flex pt-2 justify-content-end">
-                                                            <button type="button" class="btn btn-primary btn-sm">
-                                                                <i class="bi bi-pencil-square"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                            <div id="collapse-03" class="accordion-collapse collapse show" aria-labelledby="heading-03" data-bs-parent="#accordion-03">
+                                <div class="accordion-body">
+                                    <div class="shadow p-3 mb-3 bg-body rounded">
+                                        <div class="row">
+                                            <h6>Estipulante/Subestipulante</h6>
+                                            <div class="col-sm-4 col-lg-3">
+                                                <input type="text" 
+                                                    id="estipulante-subestipulante-cpf-cnpj-busca" 
+                                                    class="form-control estipulante-subestipulante-cpf-cnpj-busca" 
+                                                    placeholder="CPF/CNPJ"
+                                                    onkeyup="onkeyupCPFOrCNPJ('estipulante-subestipulante-cpf-cnpj-busca')"
+                                                    maxlength="18">
                                             </div>
+                                            <div class="col-sm-7 pt-3 col-lg-8 pt-lg-0">
+                                                <input type="text" 
+                                                    id="estipulante-subestipulante-name-busca" 
+                                                    class="form-control estipulante-subestipulante-name-busca" 
+                                                    placeholder="NOME"
+                                                    disabled>                                                    
+                                            </div>
+                                            <div class="col-sm-1 pt-3 col-lg-1 pt-lg-0 ps-sm-0 text-center d-grid">
+                                                <button type="button" 
+                                                    class="btn btn-primary"
+                                                    onclick="searchCPForCNPH('estipulante-subestipulante-cpf-cnpj-busca', 'estipulante-subestipulante-name-busca')">
+                                                    <i class="bi bi-search"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <div class="row pt-4">
+                                            <h6>Segurado/Sinistrado</h6>
+                                            <div class="col-sm-4 col-lg-3">
+                                                <input type="text" 
+                                                    id="segurado-sinistrado-cpf-cnpj"
+                                                    class="form-control segurado-sinistrado-cpf-cnpj"
+                                                    placeholder="CPF/CNPJ"
+                                                    onkeyup="onkeyupCPFOrCNPJ('segurado-sinistrado-cpf-cnpj')"
+                                                    maxlength="18">
+                                            </div>
+                                            <div class="col-sm-7 pt-3 col-lg-8 pt-lg-0">
+                                                <input type="text" 
+                                                    id="segurado-sinistrado-name-busca" 
+                                                    class="form-control segurado-sinistrado-name-busca" 
+                                                    placeholder="NOME" 
+                                                    disabled>                                                    
+                                            </div>
+                                            <div class="col-sm-1 pt-3 col-lg-1 pt-lg-0 ps-sm-0 text-center d-grid">
+                                                <button type="button" 
+                                                    class="btn btn-primary"
+                                                    onclick="searchCPForCNPH('segurado-sinistrado-cpf-cnpj-busca', 'segurado-sinistrado-name-busca')">
+                                                    <i class="bi bi-search"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <div class="row pt-4">
+                                            <div class="col-sm-6 col-lg-3">
+                                                <h6>Apólice</h6>
+                                                <input type="text" id="apolice-busca" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="col-sm-6 pt-3 col-lg-3 pt-lg-0">
+                                                <h6>Protocolo</h6>
+                                                <input type="text" id="protocolo-busca" class="form-control" placeholder="">                                                    
+                                            </div>
+                                            <div class="col-sm-6 pt-3 col-lg-3 pt-lg-0">
+                                                <h6>Sinistro</h6>
+                                                <input type="text" id="sinistro-busca" class="form-control" placeholder="">                                                    
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <div class="row pt-4">
+                                            <div class="col-sm-6 col-lg-3">
+                                                <h6>Produto</h6>
+                                                <select id="select-produto-busca" class="form-select" 
+                                                    aria-label="type-safe select-produto-busca">
+                                                        <option selected>Selecione um produto</option>
+                                                        <option value="1">Produto 01</option>
+                                                        <option value="2">Produto 02</option>
+                                                        <option value="3">Produto 03</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-6 pt-3 col-lg-3 pt-lg-0">
+                                                <h6>Status</h6>
+                                                <select id="select-status-busca" class="form-select" 
+                                                    aria-label="type-safe select-status-busca">
+                                                        <option selected>Selecione um Status</option>
+                                                        <option value="1">Status 01</option>
+                                                        <option value="2">Status 02</option>
+                                                        <option value="3">Status 03</option>
+                                                </select>                                              
+                                            </div>
+                                            <div class="col-sm-6 pt-3 col-lg-3 pt-lg-0">
+                                                <h6>Tipo de Período</h6>
+                                                <select id="select-periodo-busca" class="form-select" 
+                                                aria-label="type-safe select-periodo-busca"">
+                                                    <option selected>Selecione um Período</option>
+                                                    <option value="1">Período 01</option>
+                                                    <option value="2">Período 02</option>
+                                                    <option value="3">Período 03</option>
+                                                </select>                                                      
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <div class="row pt-4">
+                                            <div class="col-sm-6 col-lg-3 pt-lg-0">
+                                                <h6>Período De</h6>
+                                                <input type="text" id="periodo-de-busca" class="form-control" placeholder="DD/MM/YYYY">
+                                            </div>
+                                            <div class="col-sm-6 pt-3 col-lg-3 pt-lg-0">
+                                                <h6>Período Até</h6>
+                                                <input type="text" id="periodo-ate-busca" class="form-control" placeholder="DD/MM/YYYY">
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <div class="d-flex flex-column flex-md-row-reverse gap-3 pt-4">
+                                            <a href="./protocolo-novo.html" role="button" 
+                                                class="btn btn-primary">
+                                                <i class="bi bi-plus-circle"></i>
+                                                Novo
+                                            </a>
+                                            <button type="button" 
+                                                class="btn btn-primary">
+                                                <i class="bi bi-x-circle"></i>
+                                                Limpar
+                                            </button>
+                                            <button type="button" 
+                                                class="btn btn-primary">
+                                                <i class="bi bi-search"></i>
+                                                Pesquisar
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
