@@ -41,6 +41,13 @@ body{
     gap: 10px;
 }
 
+.grid-passo-02-cards{
+    border: 0px solid #000;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+
 .grid-select-insurance .card{
     width: 100px;
     cursor: pointer;
@@ -72,6 +79,22 @@ body{
     font-size: 30px;
 }
 
+.grid-passo-02-cards .card{
+    width: 100%;
+    
+}
+.grid-passo-02-cards .card .card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fs-7{
+    font-size: 0.8rem;
+}
+
+
 @media(max-width:768px){
     .container{
         padding: 0;
@@ -91,6 +114,10 @@ body{
         overflow: scroll;
     }
 
+    .grid-passo-02-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+
     .grid-select-insurance .card i{
         font-size: 20px;
     }
@@ -100,5 +127,9 @@ body{
     }
     .grid-select-insurance .card-title{
         font-size: 10px;
+    }
+
+    .breadcrumb-item{
+        font-size: 12px;
     }
 }
