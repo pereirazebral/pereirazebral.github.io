@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Passo 03 - Descrição do Sinistro</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="styles.css"/>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+        <link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+        <link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+        <link rel="manifest" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/manifest.json">
+        <link rel="mask-icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+        <link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon.ico">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="container-fluid h-100-vh">
+                <div class="row align-items-center">
+                    <div class="row pt-3 pb-3">
+                        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                              <li class="breadcrumb-item" aria-current="page">Abertura de Protocolo</li>
+                              <li class="breadcrumb-item active" aria-current="page">Passo 03 - Descrição do Sinistro</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <h6 class="mb-0 pt-3">Número do Protocolo :</h6>
+                    <!--  -->
+                    <div class="accordion accordion-04 no-icon pt-3 mb-3" id="accordion-04">
+                        <!--  -->
+                        <div class="accordion-item shadow">
+                            <h2 class="accordion-header" id="heading-04">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-04">
+                                    Dados do Protocolo
+                                </button>
+                            </h2>
+                            <!--  -->
+                            <div id="collapse-04" class="accordion-collapse collapse show" aria-labelledby="heading-04" data-bs-parent="#accordion-04">
+                                <div class="accordion-body">
+                                    <!--  -->
+                                    <div class="shadow p-3 mb-3 bg-body rounded">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-3">
+                                                <h6>Data do Protocolo</h6>
+                                                <input type="text" 
+                                                    id="datepicker" 
+                                                    class="form-control datepicker" 
+                                                    placeholder="DD/MM/AAAA"
+                                                    onkeyup="onkeyupDate('datepicker')"
+                                                    maxlength="10">
+                                            </div>
+                                            <div class="col-12 pt-3 col-lg-3 pt-lg-0">
+                                                <h6>Data da Entrada na Cia</h6>
+                                                <input type="text" 
+                                                    id="datepicker" 
+                                                    class="form-control datepicker" 
+                                                    placeholder="DD/MM/AAAA"
+                                                    onkeyup="onkeyupDate('datepicker')"
+                                                    maxlength="10">
+                                            </div>
+                                            <div class="col-12 pt-3 col-lg-3 pt-lg-0">
+                                                <h6>Data da Ocorrência3</h6>
+                                                <input type="text" 
+                                                    id="datepicker" 
+                                                    class="form-control datepicker" 
+                                                    placeholder="DD/MM/AAAA"
+                                                    onkeyup="onkeyupDate('datepicker')"
+                                                    maxlength="10">
+                                            </div>
+                                            <div class="col-12 pt-3 col-lg-3 pt-lg-0">
+                                                <h6>Hora da Ocorrência</h6>
+                                                <input type="text" 
+                                                    id="timepicker" 
+                                                    class="form-control" 
+                                                    placeholder="HH:MM"
+                                                    onkeyup="onkeyupTime('timepicker')"
+                                                    maxlength="5">                                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="accordion-item mt-3 shadow">
+                            <h2 class="accordion-header" id="heading-04">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-04">
+                                    Dados para Reserva Média
+                                </button>
+                            </h2>
+                            <!--  -->
+                            <div id="collapse-04" class="accordion-collapse collapse show" aria-labelledby="heading-04" data-bs-parent="#accordion-04">
+                                <div class="accordion-body">
+                                    <!--  -->
+                                    <div class="shadow p-3 mb-3 bg-body rounded">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-6">
+                                                <h6>Evento</h6>
+                                                <select id="select-evento-passo-3" class="form-select" 
+                                                    aria-label="type-safe select-evento-passo-3">
+                                                        <option selected>Selecione um Evento</option>
+                                                        <option value="1">Evento 01</option>
+                                                        <option value="2">Evento 02</option>
+                                                        <option value="3">Evento 03</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 pt-3 col-lg-6 pt-lg-0">
+                                                <h6>Causa</h6>
+                                                <select id="select-causa-passo-3" class="form-select" 
+                                                    aria-label="type-safe select-causa-passo-3">
+                                                        <option selected>Selecione uma Causa</option>
+                                                        <option value="1">Causa 01</option>
+                                                        <option value="2">Causa 02</option>
+                                                        <option value="3">Causa 03</option>
+                                                </select>                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="accordion-item mt-3 shadow">
+                            <h2 class="accordion-header" id="heading-04">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-04">
+                                    Local para Avaliação dos Bens
+                                </button>
+                            </h2>
+                            <!--  -->
+                            <div id="collapse-04" class="accordion-collapse collapse show" aria-labelledby="heading-04" data-bs-parent="#accordion-04">
+                                <div class="accordion-body">
+                                    <!--  -->
+                                    <div class="shadow p-3 mb-3 bg-body rounded">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-check form-switch form-check-reverse">
+                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckReverse">
+                                                    <label class="form-check-label fs-7" for="flexSwitchCheckReverse">O Local para avaliação dos bens será no endereço de risco cadastrado para o item?</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <div class="row pt-3">
+                                            <div class="col-12 col-lg-3">
+                                                <h6>CEP</h6>
+                                                <div class="d-flex gap-2">
+                                                    <input type="text" id="passo-3-cep" class="form-control" placeholder="">
+                                                    <button type="button" 
+                                                        class="btn btn-primary">
+                                                        <i class="bi bi-search"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <div class="row pt-3">
+                                            <div class="col-12 col-lg-10">
+                                                <h6>Endereço</h6>
+                                                <input type="text" id="passo-3-endereco" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="col-12 pt-3 col-lg-2 pt-lg-0">
+                                                <h6>Número</h6>
+                                                <input type="text" id="passo-3-numero" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <div class="row pt-3">
+                                            <div class="col-12 col-lg-4">
+                                                <h6>Complemento</h6>
+                                                <input type="text" id="passo-3-complemento" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="col-12 pt-3 col-lg-3 pt-lg-0">
+                                                <h6>Bairro</h6>
+                                                <input type="text" id="passo-3-bairro" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="col-12 pt-3 col-lg-3 pt-lg-0">
+                                                <h6>Cidade</h6>
+                                                <input type="text" id="passo-3-cidade" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="col-12 pt-3 col-lg-2 pt-lg-0">
+                                                <h6>UF</h6>
+                                                <input type="text" id="passo-3-uf" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <div class="d-flex pt-4 justify-content-between align-items-center">
+                                            <h6 class="mb-0">Telefones</h6>
+                                            <a  role="button" 
+                                                class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newPhoneModal">
+                                                    <i class="bi bi-plus-circle"></i>
+                                                    Novo
+                                            </a>
+                                        </div>
+                                        <hr class="mt-1 border-3 opacity-25">
+                                        <!--  -->
+                                        <div class="grid-cards-add pt-3">
+                                            <!--  -->
+                                            <div class="card passo-02-card-1">
+                                                <div class="card-body">
+                                                    <i class="bi bi-telephone"></i>
+                                                    <h6 class="card-title mt-0 mb-0 text-center">Residencial</h6>
+                                                    <p class="fs-7 pt-1 mb-0 fw-lighter text-center">(11) 4477-7744</p>
+                                                    <p class="fs-7 pt-1 mb-0 fw-regular text-center">Bootstrap Da Silva Santos</p>
+                                                    <div class="w-100 d-flex pt-2 justify-content-end">
+                                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newPhoneModal">
+                                                            <i class="bi bi-pencil-square"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card passo-02-card-2">
+                                                <div class="card-body">
+                                                    <i class="bi bi-telephone"></i>
+                                                    <h6 class="card-title mt-0 mb-0 text-center">Celular</h6>
+                                                    <p class="fs-7 pt-1 mb-0 fw-lighter text-center">(11) 99988-8899</p> 
+                                                    <p class="fs-7 pt-1 mb-0 fw-regular text-center">Bootstrap Company LTDA</p>
+                                                    <div class="w-100 d-flex pt-2 justify-content-end">
+                                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newPhoneModal">
+                                                            <i class="bi bi-pencil-square"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="accordion-item mt-3 shadow">
+                            <h2 class="accordion-header" id="heading-04">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-04">
+                                Dados da Ocorrência
+                                </button>
+                            </h2>
+                            <!--  -->
+                            <div id="collapse-04" class="accordion-collapse collapse show" aria-labelledby="heading-04" data-bs-parent="#accordion-04">
+                                <div class="accordion-body">
+                                    <!--  -->
+                                    <div class="shadow p-3 mb-3 bg-body rounded">
+                                        <div class="row">
+                                            <div class="col-12 pt-3 pt-lg-0">
+                                                <h6>Descrição da Ocorrência</h6>
+                                                <textarea class="form-control" id="passo-3-descricao-ocorrencia" rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <div class="row pt-3">
+                                            <div class="col-12">
+                                                <h6>Descrição dos Danos Causados nos Bens</h6>
+                                                <textarea class="form-control" id="passo-3-descricao-dos-danos" rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <div class="row pt-3">
+                                            <div class="col-12 col-lg-3">
+                                                <h6>Prejuízos</h6>
+                                                <input type="text" id="passo-3-prejuizos" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="col-12 pt-3 col-lg-9 pt-lg-0">
+                                                <h6>Observações</h6>
+                                                <textarea class="form-control" id="passo-3-descricao-dos-danos" rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="d-grid gap-2 col-12 col-lg-2 mx-auto pt-3 pb-3">
+                        <a role="button" href="passo2.html" class="btn btn-link">Voltar</a>
+                        <a role="button" href="passo4-pf.html" class="btn btn-primary">Confirmar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--  -->
+        <div class="toast-container position-fixed bottom-0 start-0 p-3">
+            <div id="liveToast" class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                  <div id="toast-body" class="toast-body">
+                    <!-- via js -->
+                  </div>
+                  <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+        <!-- -->
+        <!-- Modal Telefone -->
+        <div class="modal fade" id="newPhoneModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Telefone</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row pt-3">
+                            <div class="col-12">
+                                <h6>Tipo de Telefone</h6>
+                                <input type="text" id="novo-tipo-telefone-passo-02" class="form-control" placeholder="">                                                    
+                            </div>
+                            <div class="col-6 pt-3">
+                                <h6>DDD</h6>
+                                <input type="text" id="novo-ddd-passo-02" class="form-control" placeholder="">                                                    
+                            </div>
+                            <div class="col-6 pt-3">
+                                <h6>Número</h6>
+                                <input type="text" id="novo-numero-passo-02" class="form-control" placeholder="">                                                    
+                            </div>
+                            <div class="col-12 pt-3">
+                                <h6>Nome do Contato</h6>
+                                <input type="text" id="novo-nome-do-contato-passo-02" class="form-control" placeholder="">                                                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/ulg/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q        +mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="./scripts.js" type="text/javascript"></script>
+    </body>
+</html>

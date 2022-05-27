@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Passo 02 - Comunicante</title>
+        <title>Passo 04 - Segurado PJ</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
         <link rel="stylesheet" href="styles.css"/>
@@ -25,17 +25,18 @@
                             <ol class="breadcrumb">
                               <li class="breadcrumb-item"><a href="index.html">Início</a></li>
                               <li class="breadcrumb-item" aria-current="page">Abertura de Protocolo</li>
-                              <li class="breadcrumb-item active" aria-current="page">Passo 02 - Comunicante</li>
+                              <li class="breadcrumb-item active" aria-current="page">Passo 04 - Segurado PJ</li>
                             </ol>
                         </nav>
                     </div>
                     <h6 class="mb-0 pt-3">Número do Protocolo :</h6>
+                    <!--  -->
                     <div class="accordion accordion-04 no-icon pt-3 mb-3" id="accordion-04">
                         <!--  -->
                         <div class="accordion-item shadow">
                             <h2 class="accordion-header" id="heading-04">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-04">
-                                    Dados do Comunicante - Pessoa que está preenchendo o protocolo de sinistro
+                                    Informações do Cadastro de Segurado
                                 </button>
                             </h2>
                             <!--  -->
@@ -43,33 +44,73 @@
                                 <div class="accordion-body">
                                     <!--  -->
                                     <div class="shadow p-3 mb-3 bg-body rounded">
-                                        <div class="row">
-                                            <div class="col-12 col-lg-3">
-                                                <h6>Origem</h6>
-                                                <select id="select-origem-passo-02" class="form-select" 
-                                                    aria-label="type-safe select-origem-passo-02">
-                                                        <option selected>Selecione uma origem</option>
-                                                        <option value="1">Origem 01</option>
-                                                        <option value="2">Origem 02</option>
-                                                        <option value="3">Origem 03</option>
-                                                </select>
+                                        <!--  -->
+                                        <div class="row pt-3">
+                                            <div class="col-12 col-lg-4"">
+                                                <h6 class="mb-0">Tipo de Pessoa</h6>
+                                                <p class="fs-6 fw-lighter">Pessoa Jurídica</p>
                                             </div>
-                                            <div class="col-12 col-lg-3 pt-3 pt-lg-0">
-                                                <h6>Tipo de Comunicante</h6>
-                                                <select id="select-tipo-comunicante-passo-02" class="form-select" 
-                                                    aria-label="type-safe select-tipo-comunicante-passo-02">
-                                                        <option selected>Selecione um tipo</option>
-                                                        <option value="1">Tipo 01</option>
-                                                        <option value="2">Tipo 02</option>
-                                                        <option value="3">Tipo 03</option>
-                                                </select>
+                                            <!--  -->
+                                            <div class="col-12 col-lg-4">
+                                                <h6 class="mb-0">CNPJ</h6>
+                                                <p class="fs-6 fw-lighter">192.749.250-51</p>
+                                            </div>
+                                            <!--  -->
+                                            <div class="col-12 col-lg-4">
+                                                <h6 class="mb-0">Nome</h6>
+                                                <p class="fs-6 fw-lighter">Fernando Ferreira de Faria</p>
                                             </div>
                                         </div>
                                         <!--  -->
                                         <div class="row pt-3">
-                                            <div class="col-12">
-                                                <h6>Nome</h6>
-                                                <input type="text" id="nome-passo-02" class="form-control" placeholder="">                                                    
+                                            <div class="col-12 col-lg-4">
+                                                <h6 class="mb-0">Atividade</h6>
+                                                <p class="fs-6 fw-lighter">Professor</p>
+                                            </div>
+                                            <!--  -->
+                                            <div class="col-12 col-lg-4">
+                                                <h6 class="mb-0">Inscrição Municipal</h6>
+                                                <p class="fs-6 fw-lighter">139184912</p>
+                                            </div>
+                                            <!--  -->
+                                            <div class="col-12 col-lg-4">
+                                                <h6 class="mb-0">Data de Fundação</h6>
+                                                <p class="fs-6 fw-lighter">04/01/1985</p>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <div class="row pt-3">
+                                            <!--  -->
+                                            <div class="col-12 col-lg-4">
+                                                <h6 class="mb-0">Patrimônio Estimado</h6>
+                                                <p class="fs-6 fw-lighter">R$ 526.900,00</p>
+                                            </div>
+                                            <!--  -->
+                                        </div>
+                                        <!--  -->
+                                        <div class="d-flex pt-4 justify-content-between align-items-center">
+                                            <h6 class="mb-0">Endereços</h6>
+                                            <a  role="button" 
+                                                class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newEndressModal">
+                                                    <i class="bi bi-plus-circle"></i>
+                                                    Novo
+                                            </a>
+                                        </div>
+                                        <hr class="mt-1 border-3 opacity-25">
+                                        <!--  -->
+                                        <div class="grid-cards-add pt-3">
+                                            <!--  -->
+                                            <div class="card passo-02-card-1">
+                                                <div class="card-body">
+                                                    <i class="bi bi-house"></i>
+                                                    <h6 class="card-title mt-0 mb-0 text-center">Residencial</h6>
+                                                    <p class="fs-7 pt-1 mb-0 fw-lighter text-center">Rua Santo Estevão, 277 <br>Casa 02 <br>Jardin Iracema - Barueri - SP. <br>CEP: 06440-190</p>
+                                                    <div class="w-100 d-flex pt-2 justify-content-end">
+                                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newEndressModal">
+                                                            <i class="bi bi-pencil-square"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <!--  -->
@@ -131,14 +172,14 @@
                                                     <h6 class="card-title mt-0 mb-0 text-center">Pessoal</h6>
                                                     <p class="fs-7 pt-1 mb-0 fw-lighter text-center">bootstrap@mail.com</p>
                                                     <div class="form-check form-switch form-check-reverse d-flex flex-column-reverse justify-content-center align-items-center pe-0 pt-3">
-                                                        <input class="form-check-input form-check-input-disabled me-0" type="checkbox" id="flexSwitchCheckReverse" checked>
+                                                        <input class="form-check-input form-check-input-disabled me-0" type="checkbox" id="flexSwitchCheckReverse">
                                                         <label class="form-check-label fs-7" for="flexSwitchCheckReverse">Enviar automático?</label>
                                                     </div>
                                                     <div class="w-100 d-flex pt-2 justify-content-end">
                                                         <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newEmailModal">
                                                             <i class="bi bi-pencil-square"></i>
                                                         </button>
-                                                    </div> 
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="card passo-02-card-2">
@@ -147,46 +188,86 @@
                                                     <h6 class="card-title mt-0 mb-0 text-center">Comporativo</h6>
                                                     <p class="fs-7 pt-1 mb-0 fw-lighter text-center">bootstrap@bootstrapcompany.com</p> 
                                                     <div class="form-check form-switch form-check-reverse d-flex flex-column-reverse justify-content-center align-items-center pe-0 pt-3">
-                                                        <input class="form-check-input form-check-input-disabled me-0" type="checkbox" id="flexSwitchCheckReverse">
+                                                        <input class="form-check-input form-check-input-disabled me-0" type="checkbox" id="flexSwitchCheckReverse" checked>
                                                         <label class="form-check-label fs-7" for="flexSwitchCheckReverse">Enviar automático?</label>
-                                                    </div> 
+                                                    </div>
                                                     <div class="w-100 d-flex pt-2 justify-content-end">
                                                         <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newEmailModal">
                                                             <i class="bi bi-pencil-square"></i>
                                                         </button>
-                                                    </div>   
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                    <!--  -->
                                     </div>
                                     <!--  -->
                                 </div>
                             </div>
                         </div>
                         <!--  -->
-                        <div class="d-grid gap-2 col-12 col-lg-2 mx-auto pt-3 pb-3">
-                            <a role="button" href="passo1.html" class="btn btn-link">Voltar</a>
-                            <a role="button" href="passo3.html"
-                                class="btn btn-primary">
-                                    Confirmar                
-                            </a>
-                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="d-grid gap-2 col-12 col-lg-2 mx-auto pt-3 pb-3">
+                        <a role="button" href="passo4-pf.html" class="btn btn-link">Voltar</a>
+                        <a role="button" href="passo5.html" class="btn btn-primary">Confirmar</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!--  -->
-        <div class="toast-container position-fixed bottom-0 start-0 p-3">
-            <div id="liveToast" class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="d-flex">
-                  <div id="toast-body" class="toast-body">
-                    <!-- via js -->
-                  </div>
-                  <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        <!-- -->
+        <!-- Modal Endereço -->
+        <div class="modal fade" id="newEndressModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Endereço</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row pt-3">
+                            <div class="col-12">
+                                <h6>Tipo de Endereço</h6>
+                                <input type="text" id="endereco-tipo-passo-04" class="form-control" placeholder="">                                                    
+                            </div>
+                            <div class="col-6 pt-3">
+                                <h6>CEP</h6>
+                                <input type="text" id="endereco-cep-passo-04" class="form-control" placeholder="">                                                    
+                            </div>
+                            <div class="col-6 pt-3">
+                                <h6>Número</h6>
+                                <input type="text" id="endereco-numero-passo-04" class="form-control" placeholder="">                                                    
+                            </div>
+                            <div class="col-12 pt-3">
+                                <h6>Endereço</h6>
+                                <input type="text" id="endereco-endereco-passo-04" class="form-control" placeholder="">                                                    
+                            </div>
+                           
+                            <div class="col-12 pt-3">
+                                <h6>Complemento</h6>
+                                <input type="text" id="endereco-complemento-passo-04" class="form-control" placeholder="">                                                    
+                            </div>
+                            <div class="col-12 pt-3">
+                                <h6>Bairro</h6>
+                                <input type="text" id="endereco-bairro-passo-04" class="form-control" placeholder="">                                                    
+                            </div>
+                            <div class="col-12 pt-3">
+                                <h6>Cidade</h6>
+                                <input type="text" id="endereco-cidade-passo-04" class="form-control" placeholder="">                                                    
+                            </div>
+                            <div class="col-3 pt-3">
+                                <h6>UF</h6>
+                                <input type="text" id="endereco-uf-passo-04" class="form-control" placeholder="">                                                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Salvar</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- -->
         <!-- Modal Telefone -->
         <div class="modal fade" id="newPhoneModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -243,7 +324,7 @@
                                 <h6>Envio Automático</h6>
                                 <div class="form-check form-switch form-check">
                                     <input class="form-check-input me-0" type="checkbox" id="flexSwitchCheckReverse">
-                                </div>                                                    
+                                </div>                                                   
                             </div>
                         </div>
                     </div>

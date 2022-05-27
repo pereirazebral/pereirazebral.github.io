@@ -70,16 +70,6 @@ function onkeyupDate(selector){
     setValueSelector(selector, value)
 }
 
-//date
-function setMaskDate(value){
-    if(value.length === 2){
-        value = value+"/"
-    }else if(value.length === 5){
-        value = value+"/"
-    }
-    return value
-}
-
 //mask date
 function setMaskDate(value){
     if(value.length === 2){
