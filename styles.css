@@ -1,7 +1,7 @@
 body{
     background-color: #eee;
 }
-.no-icon .accordion-button::after{
+.no-icon.accordion-button::after{
     display: none;
 }
 
