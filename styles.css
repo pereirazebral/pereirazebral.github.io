@@ -99,6 +99,7 @@ body{
     pointer-events: none;
 }
 
+
 @media(max-width:768px){
     .container{
         padding: 0;
