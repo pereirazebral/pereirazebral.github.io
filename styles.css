@@ -1,3 +1,17 @@
+a:not(.btn-primary),
+.accordion-button:not(.collapsed),
+.primary-color{
+    color: #f47920 !important;
+}
+.btn-primary,
+.toast,
+.form-check-input:checked{
+    background-color: #f47920 !important;
+    border-color: #f47920 !important;
+}
+.accordion-button{
+    background-color: #f478203a !important;
+}
 body{
     background-color: #eee;
 }
@@ -14,7 +28,7 @@ body{
 }
 
 .collapse-02 .card {
-    width: 300px;
+    width: auto;
 }
 
 .collapse-02 .card .card-description{
@@ -136,6 +150,10 @@ body{
 
     .breadcrumb-item{
         font-size: 12px;
+    }
+
+    .form-control-file{
+        font-size: 8px;
     }
 }
 
