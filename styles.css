@@ -28,7 +28,7 @@ body{
 }
 
 .collapse-02 .card {
-    width: auto;
+    width: 100%;
 }
 
 .collapse-02 .card .card-description{
@@ -112,6 +112,72 @@ body{
 .form-check-input-disabled{
     pointer-events: none;
 }
+@media(min-width:768px){
+    .container-steps .col-lg-1{
+        width: 10% !important;
+    }
+    
+}
+
+
+.container-steps .link{
+    text-decoration: none;
+    pointer-events: none;
+    margin-right: 10px;
+}
+.container-steps .link.active{
+    pointer-events: initial;
+}
+.container-steps .card{
+    transition: ease-in 0.3s;
+    opacity: 0.4;
+    pointer-events: none;
+    cursor: none;
+    width: 100px;
+    height: 80px;
+}
+.container-steps .card.active{
+    pointer-events: initial;
+    cursor: pointer;
+    opacity: 1;
+}
+.container-steps .card:hover,
+.container-steps .card.active{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.container-steps .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+.container-steps .card-body .card-description,
+.container-steps .card-body .card-title{
+    text-align: center;
+}
+
+.container-steps .card-body .card-title{
+    font-size: 12px;
+}
+
+.container-steps .card-body .card-description{
+    font-size: 11px;
+}
+.container-controls .btn{
+    width: 150px;
+}
+
+.carousel{
+    background-color: #f478203a !important;
+}
+
+.carousel .card{
+    width: 250px;
+}
+
 
 
 @media(max-width:768px){
@@ -154,6 +220,10 @@ body{
 
     .form-control-file{
         font-size: 8px;
+    }
+
+    .container-steps .card{
+        width: 100%;
     }
 }
 
