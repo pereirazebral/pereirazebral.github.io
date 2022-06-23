@@ -112,6 +112,39 @@ body{
 .form-check-input-disabled{
     pointer-events: none;
 }
+
+.contencioso-check,
+.boletim-check{
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 10px;
+    display: none;
+}
+.contencioso-check.active,
+.boletim-check.active{
+    display: block;
+}
+
+.carousel-item .card-body{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.passo-6-selecionada{
+    display: none;
+}
+.passo-6-selecionada.active{
+    display: block;
+}
+
+.protocolo{
+    background-color: #f47920;
+    padding: 10px 5px;
+    border-radius: 3px;
+}
+
 @media(min-width:768px){
     .container-steps .col-lg-1{
         width: 10% !important;

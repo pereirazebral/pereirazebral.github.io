@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Passo 07 - Prestador</title>
+        <title>Passo 07 - Terceiros</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
         <link rel="stylesheet" href="styles.css"/>
@@ -18,9 +18,9 @@
     </head>
     <body>
         <div class="container">
-          <div class="container-fluid h-100-vh">
-            <div class="row align-items-center">
-                <div class="container-steps">
+            <div class="container-fluid h-100-vh">
+                <div class="row align-items-center">
+                  <div class="container-steps">
                     <div class="row pt-3 pb-3">
                         <div class="col-12 col-lg-1">
                             <a class="link active" href="passo1.html">
@@ -87,7 +87,7 @@
                                 <div class="card active">
                                     <div class="card-body">
                                         <h6 class="card-title">PASSO 06</h6>
-                                        <p class="card-description">Terceiros</p>
+                                        <p class="card-description">Cobertura X Documentos</p>
                                     </div>
                                 </div>
                             </a>
@@ -97,7 +97,7 @@
                                 <div class="card active">
                                     <div class="card-body">
                                         <h6 class="card-title">PASSO 07</h6>
-                                        <p class="card-description">Prestador</p>
+                                        <p class="card-description">Terceiros</p>
                                     </div>
                                 </div>
                             </a>
@@ -107,7 +107,7 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <h6 class="card-title">PASSO 08</h6>
-                                        <p class="card-description">Cobertura X Documentos</p>
+                                        <p class="card-description">Prestador</p>
                                     </div>
                                 </div>
                             </a>
@@ -124,484 +124,482 @@
                         </div>
                     </div>
                 </div>
-              <h6 class="mb-0 pt-3">Número do Protocolo :</h6>
-              <!--  -->
-              <div class="accordion accordion-04 no-icon pt-3 mb-3" id="accordion-04">
+                    <!-- <h6 class="mb-0 pt-3">Número do Protocolo :</h6> -->
+                    <!--  -->
+                    <div class="accordion accordion-04 no-icon pt-3 mb-3" id="accordion-04">
+                        <!--  -->
+                        <div class="accordion-item shadow">
+                            <h2 class="accordion-header" id="heading-04">
+                                <button class="no-icon accordion-button" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-04">
+                                    Dados dos Terceiros
+                                </button>
+                            </h2>
+                            <!--  -->
+                            <div id="collapse-04" class="accordion-collapse collapse show" aria-labelledby="heading-04" data-bs-parent="#accordion-04">
+                                <div class="accordion-body">
+                                    <!--  -->
+                                    <div class="shadow p-3 mb-3 bg-body rounded">
+                                        <div class="alert alert-warning" role="alert">
+                                            É importante que essas informações sejam preenchidas com o máximo de riqueza de detalhes para que a análise de seu sinistro seja agilizada.
+                                          </div>
+                                        <div class="d-flex pt-4 justify-content-between align-items-center">
+                                          <h6 class="mb-0">Terceiros</h6>
+                                          <a role="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newTerceiroModal">
+                                            <i class="bi bi-plus-circle"></i>
+                                            Novo
+                                          </a>
+                                        </div>
+                                        <hr class="mt-1 border-3 opacity-25">
+                                        <!--  -->
+                                        <div class="row">
+                                            <div class="accordion accordion-flush accordion-terceiros" id="accordionFlushExample">
+                                              <!--  -->
+                                              <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                    Maria Aparecida de Assis
+                                                  </button>
+                                                </h2>
+                                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                  <div class="accordion-body">
+                                                        <div class="row pt-3">
+                                                          <div class="col-12 col-lg-3">
+                                                            <h6>CPF/CNPJ</h6>
+                                                            <input type="text" id="passo-6-cpf-cnpj" class="form-control" placeholder="">
+                                                          </div>
+                                                          <div class="col-12 pt-3 col-lg-9 pt-lg-0">
+                                                            <h6>Nome</h6>
+                                                            <div class="d-flex gap-2">
+                                                              <input type="text" id="passo-6-nome" class="form-control" placeholder="">
+                                                              <button type="button" class="btn btn-primary">
+                                                                <i class="bi bi-search"></i>
+                                                              </button>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        <!--  -->
+                                                        <!--  -->
+                                                        <div class="d-flex pt-4 justify-content-between align-items-center">
+                                                            <h6 class="mb-0">Telefones</h6>
+                                                            <a  role="button" 
+                                                                class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newPhoneModal">
+                                                                    <i class="bi bi-plus-circle"></i>
+                                                                    Novo
+                                                            </a>
+                                                        </div>
+                                                        <hr class="mt-1 border-3 opacity-25">
+                                                        <!--  -->
+                                                        <div class="grid-cards-add pt-3">
+                                                            <!--  -->
+                                                            <div class="card passo-02-card-1">
+                                                                <div class="card-body">
+                                                                    <i class="bi bi-telephone"></i>
+                                                                    <h6 class="card-title mt-0 mb-0 text-center">Residencial</h6>
+                                                                    <p class="fs-7 pt-1 mb-0 fw-lighter text-center">(11) 4477-7744</p>
+                                                                    <p class="fs-7 pt-1 mb-0 fw-regular text-center">Bootstrap Da Silva Santos</p>
+                                                                    <div class="w-100 d-flex pt-2 justify-content-end">
+                                                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newPhoneModal">
+                                                                            <i class="bi bi-pencil-square"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card passo-02-card-2">
+                                                                <div class="card-body">
+                                                                    <i class="bi bi-telephone"></i>
+                                                                    <h6 class="card-title mt-0 mb-0 text-center">Celular</h6>
+                                                                    <p class="fs-7 pt-1 mb-0 fw-lighter text-center">(11) 99988-8899</p> 
+                                                                    <p class="fs-7 pt-1 mb-0 fw-regular text-center">Bootstrap Company LTDA</p>
+                                                                    <div class="w-100 d-flex pt-2 justify-content-end">
+                                                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newPhoneModal">
+                                                                            <i class="bi bi-pencil-square"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--  -->
+                                                        <!--  -->
+                                        <div class="d-flex pt-4 justify-content-between align-items-center">
+                                          <h6 class="mb-0">E-mails</h6>
+                                          <a  role="button" 
+                                              class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newEmailModal">
+                                                  <i class="bi bi-plus-circle"></i>
+                                                  Novo
+                                          </a>
+                                      </div>
+                                      <hr class="mt-1 border-3 opacity-25">
+                                      <!--  -->
+                                      <div class="grid-cards-add pt-3">
+                                          <!--  -->
+                                          <div class="card passo-02-card-1">
+                                              <div class="card-body">
+                                                  <i class="bi bi-envelope"></i>
+                                                  <h6 class="card-title mt-0 mb-0 text-center">Pessoal</h6>
+                                                  <p class="fs-7 pt-1 mb-0 fw-lighter text-center">bootstrap@mail.com</p>
+                                                  <div class="form-check form-switch form-check-reverse d-flex flex-column-reverse justify-content-center align-items-center pe-0 pt-3">
+                                                      <input class="form-check-input form-check-input-disabled me-0" type="checkbox" id="flexSwitchCheckReverse">
+                                                      <label class="form-check-label fs-7" for="flexSwitchCheckReverse">Enviar automático?</label>
+                                                  </div>
+                                                  <div class="w-100 d-flex pt-2 justify-content-end">
+                                                      <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newEmailModal">
+                                                          <i class="bi bi-pencil-square"></i>
+                                                      </button>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="card passo-02-card-2">
+                                              <div class="card-body">
+                                                  <i class="bi bi-envelope"></i>
+                                                  <h6 class="card-title mt-0 mb-0 text-center">Comporativo</h6>
+                                                  <p class="fs-7 pt-1 mb-0 fw-lighter text-center">bootstrap@bootstrapcompany.com</p> 
+                                                  <div class="form-check form-switch form-check-reverse d-flex flex-column-reverse justify-content-center align-items-center pe-0 pt-3">
+                                                      <input class="form-check-input form-check-input-disabled me-0" type="checkbox" id="flexSwitchCheckReverse" checked>
+                                                      <label class="form-check-label fs-7" for="flexSwitchCheckReverse">Enviar automático?</label>
+                                                  </div>
+                                                  <div class="w-100 d-flex pt-2 justify-content-end">
+                                                      <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newEmailModal">
+                                                          <i class="bi bi-pencil-square"></i>
+                                                      </button>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="row pt-5">
+                                        <div class="col-12 col-lg-3">
+                                          <h6>Terceiro possui seguro?</h6>
+                                          <div class="form-check form-switch form-check">
+                                            <input class="form-check-input me-0" type="checkbox" id="flexSwitchCheckReverse">
+                                          </div>
+                                        </div>
+                                        <div class="col-12 pt-3 col-lg-7 pt-lg-0">
+                                          <h6>Seguradora</h6>
+                                          <div class="d-flex gap-2">
+                                            <input type="text" id="passo-6-nome" class="form-control" placeholder="">
+                                            <button type="button" class="btn btn-primary">
+                                              <i class="bi bi-search"></i>
+                                            </button>
+                                          </div>
+                                        </div>
+                                        <div class="col-12 pt-3 col-lg-2 pt-lg-0">
+                                          <h6>Apólice</h6>
+                                          <input type="text" id="passo-6-apolice" class="form-control" placeholder="">
+                                        </div>
+                                      </div>
+                                      <!--  -->
+                                      <div class="d-flex flex-column flex-lg-row gap-3 justify-content-center pt-5 pb-3">
+                                        <a role="button" href="passo6.html" class="btn btn-primary">Salvar</a>
+                                        <button type="button" class="btn btn-outline-secondary">Cancelar</button>
+                                        <button type="button" class="btn btn-outline-danger">Excluir</button>
+                                      </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <!--  -->
+                                              <div class="accordion-item mt-3">
+                                                <h2 class="accordion-header" id="flush-heading-2">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-2" aria-expanded="false" aria-controls="flush-collapse-2">
+                                                    José Ricardo de Almeida
+                                                  </button>
+                                                </h2>
+                                                <div id="flush-collapse-2" class="accordion-collapse collapse" aria-labelledby="flush-heading-2" data-bs-parent="#accordionFlushExample">
+                                                  <div class="accordion-body">
+                                                    <div class="row pt-3">
+                                                      <div class="col-12 col-lg-3">
+                                                        <h6>CPF/CNPJ</h6>
+                                                        <input type="text" id="passo-6-cpf-cnpj" class="form-control" placeholder="">
+                                                      </div>
+                                                      <div class="col-12 pt-3 col-lg-9 pt-lg-0">
+                                                        <h6>Nome</h6>
+                                                        <div class="d-flex gap-2">
+                                                          <input type="text" id="passo-6-nome" class="form-control" placeholder="">
+                                                          <button type="button" class="btn btn-primary">
+                                                            <i class="bi bi-search"></i>
+                                                          </button>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <!--  -->
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <!--  -->
+                                              <div class="accordion-item mt-3">
+                                                <h2 class="accordion-header" id="flush-heading-3">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-3" aria-expanded="false" aria-controls="flush-collapse-3">
+                                                    Beatriz Carvalho Souza
+                                                  </button>
+                                                </h2>
+                                                <div id="flush-collapse-3" class="accordion-collapse collapse" aria-labelledby="flush-heading-3" data-bs-parent="#accordionFlushExample">
+                                                  <div class="accordion-body">
+                                                    <div class="row pt-3">
+                                                      <div class="col-12 col-lg-3">
+                                                        <h6>CPF/CNPJ</h6>
+                                                        <input type="text" id="passo-6-cpf-cnpj" class="form-control" placeholder="">
+                                                      </div>
+                                                      <div class="col-12 pt-3 col-lg-9 pt-lg-0">
+                                                        <h6>Nome</h6>
+                                                        <div class="d-flex gap-2">
+                                                          <input type="text" id="passo-6-nome" class="form-control" placeholder="">
+                                                          <button type="button" class="btn btn-primary">
+                                                            <i class="bi bi-search"></i>
+                                                          </button>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <!--  -->
+                                                  </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    <!--  -->
+                                    </div>
+                                <!--  -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+                
                 <!--  -->
-                <div class="accordion-item shadow">
-                  <h2 class="accordion-header" id="heading-04">
-                    <button class="no-icon accordion-button" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-04">
-                      Dados do Prestador
-                    </button>
-                  </h2>
-                  <!--  -->
-                  <div id="collapse-04" class="accordion-collapse collapse show" aria-labelledby="heading-04" data-bs-parent="#accordion-04">
-                    <div class="accordion-body">
-                        <!--  -->
-                        <div class="shadow p-3 mb-3 bg-body rounded">
-                          <div class="row pt-3">
-                            <div class="col-12 col-lg-3">
-                              <h6>CPF/CNPJ</h6>
-                              <input type="text" id="passo-7-cpf-cnpj" class="form-control" placeholder="">
-                            </div>
-                            <div class="col-12 pt-3 col-lg-9 pt-lg-0">
-                              <h6>Nome</h6>
-                              <div class="d-flex gap-2">
-                                <input type="text" id="passo-7-nome" class="form-control" placeholder="">
-                                <button type="button" class="btn btn-primary">
-                                  <i class="bi bi-search"></i>
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                          <!--  -->
-                          <div class="row pt-3">
-                            <div class="col-12 col-lg-6">
-                              <h6>Especialidade</h6>
-                              <div class="d-flex gap-2">
-                                <input type="text" id="passo-7-especialidade" class="form-control" placeholder="">
-                                <button type="button" class="btn btn-primary">
-                                  <i class="bi bi-search"></i>
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                          <!--  -->
-                          <!--  -->
-                          <div class="d-flex pt-4 justify-content-between align-items-center">
-                            <h6 class="mb-0">Telefones</h6>
-                            <a  role="button" 
-                                class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newPhoneModal">
-                                    <i class="bi bi-plus-circle"></i>
-                                    Novo
-                            </a>
-                          </div>
-                          <hr class="mt-1 border-3 opacity-25">
-                          <div class="grid-cards-add pt-3">
-                            <!--  -->
-                            <div class="card passo-02-card-1">
-                                <div class="card-body">
-                                    <i class="bi bi-telephone"></i>
-                                    <h6 class="card-title mt-0 mb-0 text-center">Residencial</h6>
-                                    <p class="fs-7 pt-1 mb-0 fw-lighter text-center">(11) 4477-7744</p>
-                                    <p class="fs-7 pt-1 mb-0 fw-regular text-center">Bootstrap Da Silva Santos</p>
-                                    <div class="w-100 d-flex pt-2 justify-content-end">
-                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newPhoneModal">
-                                            <i class="bi bi-pencil-square"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card passo-02-card-2">
-                                <div class="card-body">
-                                    <i class="bi bi-telephone"></i>
-                                    <h6 class="card-title mt-0 mb-0 text-center">Celular</h6>
-                                    <p class="fs-7 pt-1 mb-0 fw-lighter text-center">(11) 99988-8899</p> 
-                                    <p class="fs-7 pt-1 mb-0 fw-regular text-center">Bootstrap Company LTDA</p>
-                                    <div class="w-100 d-flex pt-2 justify-content-end">
-                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newPhoneModal">
-                                            <i class="bi bi-pencil-square"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                          <!--  -->
-                          <div class="d-flex pt-4 justify-content-between align-items-center">
-                            <h6 class="mb-0">E-mails</h6>
-                            <a  role="button" 
-                                class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newEmailModal">
-                                    <i class="bi bi-plus-circle"></i>
-                                    Novo
-                            </a>
-                        </div>
-                        <hr class="mt-1 border-3 opacity-25">
-                        <!--  -->
-                        <div class="grid-cards-add pt-3">
-                            <!--  -->
-                            <div class="card passo-02-card-1">
-                                <div class="card-body">
-                                    <i class="bi bi-envelope"></i>
-                                    <h6 class="card-title mt-0 mb-0 text-center">Pessoal</h6>
-                                    <p class="fs-7 pt-1 mb-0 fw-lighter text-center">bootstrap@mail.com</p>
-                                    <div class="form-check form-switch form-check-reverse d-flex flex-column-reverse justify-content-center align-items-center pe-0 pt-3">
-                                        <input class="form-check-input form-check-input-disabled me-0" type="checkbox" id="flexSwitchCheckReverse">
-                                        <label class="form-check-label fs-7" for="flexSwitchCheckReverse">Enviar automático?</label>
-                                    </div>
-                                    <div class="w-100 d-flex pt-2 justify-content-end">
-                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newEmailModal">
-                                            <i class="bi bi-pencil-square"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card passo-02-card-2">
-                                <div class="card-body">
-                                    <i class="bi bi-envelope"></i>
-                                    <h6 class="card-title mt-0 mb-0 text-center">Comporativo</h6>
-                                    <p class="fs-7 pt-1 mb-0 fw-lighter text-center">bootstrap@bootstrapcompany.com</p> 
-                                    <div class="form-check form-switch form-check-reverse d-flex flex-column-reverse justify-content-center align-items-center pe-0 pt-3">
-                                        <input class="form-check-input form-check-input-disabled me-0" type="checkbox" id="flexSwitchCheckReverse" checked>
-                                        <label class="form-check-label fs-7" for="flexSwitchCheckReverse">Enviar automático?</label>
-                                    </div>
-                                    <div class="w-100 d-flex pt-2 justify-content-end">
-                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newEmailModal">
-                                            <i class="bi bi-pencil-square"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-flex pt-4 justify-content-between align-items-center">
-                          <h6 class="mb-0">Endereços</h6>
-                          <a  role="button" 
-                              class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newEndressModal">
-                                  <i class="bi bi-plus-circle"></i>
-                                  Novo
-                          </a>
-                      </div>
-                      <hr class="mt-1 border-3 opacity-25">
-                      <!--  -->
-                      <div class="grid-cards-add pt-3">
-                          <!--  -->
-                          <div class="card passo-02-card-1">
-                              <div class="card-body">
-                                  <i class="bi bi-house"></i>
-                                  <h6 class="card-title mt-0 mb-0 text-center">Residencial</h6>
-                                  <p class="fs-7 pt-1 mb-0 fw-lighter text-center">Rua Santo Estevão, 277 <br>Casa 02 <br>Jardin Iracema - Barueri - SP. <br>CEP: 06440-190</p>
-                                  <div class="w-100 d-flex pt-2 justify-content-end">
-                                      <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newEndressModal">
-                                          <i class="bi bi-pencil-square"></i>
-                                      </button>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <!--  -->
-                      <div class="d-flex pt-4 justify-content-between align-items-center">
-                        <h6 class="mb-0">Agenda</h6>
-                        <a  role="button" 
-                            class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newAgenda">
-                                <i class="bi bi-plus-circle"></i>
-                                Novo
-                        </a>
-                    </div>
-                    <hr class="mt-1 border-3 opacity-25">
-                    <!--  -->
-
-                    <h6 class="mb-0 ms-2">01/02/2022</h6>
-                    <hr class="mt-1 ms-2 border-3 opacity-25">
-                    <div class="grid-cards-add pt-3 ms-2">
-                        <!--  -->
-                        <div class="card passo-02-card-1">
-                            <div class="card-body">
-                                <i class="bi bi-calendar-date mb-2"></i>
-                                <h6 class="card-title mt-0 text-center">11:00 - 14:00</h6>
-                                <h6 class="card-title mt-0 mb-0 text-center">FCMARTINS</h6>
-                                <p class="fs-7 pt-1 mb-0 fw-lighter text-center">Fora da Cidade</p>
-                                <p class="fs-7 pt-1 mb-0 fw-lighter text-center">Importante</p>
-                                <p class="fs-7 pt-1 mb-0 fw-lighter text-center" data-bs-toggle="tooltip">Segurado - Vistoria agendada na Oficina P.A.R.E...</p>
-                                <div class="w-100 d-flex pt-2 justify-content-end">
-                                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newEndressModal">
-                                        <i class="bi bi-pencil-square"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card passo-02-card-1">
-                            <div class="card-body">
-                              <i class="bi bi-calendar-date mb-2"></i>
-                              <h6 class="card-title mt-0 text-center">14:00 - 16:00</h6>
-                              <h6 class="card-title mt-0 mb-0 text-center">FCMARTINS</h6>
-                              <p class="fs-7 pt-1 mb-0 fw-lighter text-center">Fora da Cidade</p>
-                              <p class="fs-7 pt-1 mb-0 fw-lighter text-center">Importante</p>
-                              <p class="fs-7 pt-1 mb-0 fw-lighter text-center" data-bs-toggle="tooltip">Segurado - Vistoria agendada na Oficina P.A.R.E...</p>
-                              <div class="w-100 d-flex pt-2 justify-content-end">
-                                  <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newEndressModal">
-                                      <i class="bi bi-pencil-square"></i>
-                                  </button>
-                              </div>
-                          </div>
-                        </div>
-                        <div class="card passo-02-card-1">
-                          <div class="card-body">
-                            <i class="bi bi-calendar-date mb-2"></i>
-                            <h6 class="card-title mt-0 text-center">16:00 - 18:00</h6>
-                            <h6 class="card-title mt-0 mb-0 text-center">FCMARTINS</h6>
-                            <p class="fs-7 pt-1 mb-0 fw-lighter text-center">Fora da Cidade</p>
-                            <p class="fs-7 pt-1 mb-0 fw-lighter text-center">Importante</p>
-                            <p class="fs-7 pt-1 mb-0 fw-lighter text-center" data-bs-toggle="tooltip">Segurado - Vistoria agendada na Oficina P.A.R.E...</p>
-                            <div class="w-100 d-flex pt-2 justify-content-end">
-                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newEndressModal">
-                                    <i class="bi bi-pencil-square"></i>
-                                </button>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <h6 class="mb-0 mt-3 ms-2">02/02/2022</h6>
-                    <hr class="mt-1 ms-2 border-3 opacity-25">
-                    <div class="grid-cards-add pt-3 ms-2">
-                      <!--  -->
-                      <div class="card passo-02-card-1">
-                          <div class="card-body">
-                              <i class="bi bi-calendar-date mb-2"></i>
-                              <h6 class="card-title mt-0 text-center">11:00 - 14:00</h6>
-                              <h6 class="card-title mt-0 mb-0 text-center">FCMARTINS</h6>
-                              <p class="fs-7 pt-1 mb-0 fw-lighter text-center">Fora da Cidade</p>
-                              <p class="fs-7 pt-1 mb-0 fw-lighter text-center">Importante</p>
-                              <p class="fs-7 pt-1 mb-0 fw-lighter text-center" data-bs-toggle="tooltip">Segurado - Vistoria agendada na Oficina P.A.R.E...</p>
-                              <div class="w-100 d-flex pt-2 justify-content-end">
-                                  <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newEndressModal">
-                                      <i class="bi bi-pencil-square"></i>
-                                  </button>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="card passo-02-card-1">
-                          <div class="card-body">
-                            <i class="bi bi-calendar-date mb-2"></i>
-                            <h6 class="card-title mt-0 text-center">14:00 - 16:00</h6>
-                            <h6 class="card-title mt-0 mb-0 text-center">FCMARTINS</h6>
-                            <p class="fs-7 pt-1 mb-0 fw-lighter text-center">Fora da Cidade</p>
-                            <p class="fs-7 pt-1 mb-0 fw-lighter text-center">Importante</p>
-                            <p class="fs-7 pt-1 mb-0 fw-lighter text-center" data-bs-toggle="tooltip">Segurado - Vistoria agendada na Oficina P.A.R.E...</p>
-                            <div class="w-100 d-flex pt-2 justify-content-end">
-                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newEndressModal">
-                                    <i class="bi bi-pencil-square"></i>
-                                </button>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="card passo-02-card-1">
-                        <div class="card-body">
-                          <i class="bi bi-calendar-date mb-2"></i>
-                          <h6 class="card-title mt-0 text-center">16:00 - 18:00</h6>
-                          <h6 class="card-title mt-0 mb-0 text-center">FCMARTINS</h6>
-                          <p class="fs-7 pt-1 mb-0 fw-lighter text-center">Fora da Cidade</p>
-                          <p class="fs-7 pt-1 mb-0 fw-lighter text-center">Importante</p>
-                          <p class="fs-7 pt-1 mb-0 fw-lighter text-center" data-bs-toggle="tooltip">Segurado - Vistoria agendada na Oficina P.A.R.E...</p>
-                          <div class="w-100 d-flex pt-2 justify-content-end">
-                              <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newEndressModal">
-                                  <i class="bi bi-pencil-square"></i>
-                              </button>
-                          </div>
-                      </div>
-                      </div>
-                  </div>
-                    <!--  -->
-                        </div>
-                    </div>
-                  </div>
+                <div class="container-controls d-flex justify-content-center pt-3 pb-3">
+                    <a role="button" href="passo8.html" class="btn btn-primary me-3">Voltar</a>
+                    <a role="button" href="passo9.html" class="btn btn-primary">Confirmar</a>
                 </div>
-              </div>
-               <!--  -->
-               <div class="container-controls d-flex justify-content-center pt-3 pb-3">
-                <a role="button" href="passo6.html" class="btn btn-primary me-3">Voltar</a>
-                <a role="button" href="passo8.html" class="btn btn-primary">Confirmar</a>
             </div>
-          </div>
         </div>
-      </div>
-      
-      <!-- Modal Agenda -->
-      <div class="modal fade" id="newAgenda" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Agenda</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row ">
-                        <div class="col-12">
-                            <h6>Responsável</h6>
-                            <input type="text" id="novo-tipo-email-passo-02" class="form-control" placeholder="">                                                    
-                        </div>
-                    </div>
-                    <div class="row pt-3">
-                        <div class="col-12">
-                            <h6>Localizacão</h6>
-                            <input type="text" id="novo-email-passo-02" class="form-control" placeholder="">                                                    
-                        </div>
-                      </div>
+         <!-- Modal Telefone -->
+         <div class="modal fade" id="newPhoneModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Telefone</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
                       <div class="row pt-3">
-                        <div class="col-12">
-                          <h6>Categoria</h6>
-                          <input type="text" id="novo-email-passo-02" class="form-control" placeholder="">                                                    
-                        </div>
-                      </div>
-                        <div class="row pt-3">
-                          <h6>Inicio</h6>
-                          <div class="col-12 col-lg-6">
-                            <input type="text" id="novo-email-passo-02" class="form-control" placeholder="DD/MM/YYYY">     
-                          </div>
-                          <div class="col-12 col-lg-6 pt-3 pt-lg-0">
-                            <select id="select-culpa-passo-5" class="form-select" 
-                              aria-label="type-safe select-culpa-passo-5">
-                              <option selected>HH:MM</option>
-                              <option value="1">13:00</option>
-                              <option value="2">14:00</option>
-                              <option value="3">15:00</option>
-                            </select>  
-                          </div>                                             
-                        </div>
-                        <div class="row pt-3">
-                          <h6>Término</h6>
-                          <div class="col-12 col-lg-6">
-                            <input type="text" id="novo-email-passo-02" class="form-control" placeholder="DD/MM/YYYY">                                                    
-                          </div>
-                          <div class="col-12 col-lg-6 pt-3 pt-lg-0">
-                            <select id="select-culpa-passo-5" class="form-select" 
-                              aria-label="type-safe select-culpa-passo-5">
-                              <option selected>HH:MM</option>
-                              <option value="1">13:00</option>
-                              <option value="2">14:00</option>
-                              <option value="3">15:00</option>
-                            </select>  
-                          </div> 
-                        </div>
-                        <div class="row pt-3">
                           <div class="col-12">
-                              <h6>Todo dia o evento?</h6>
+                              <h6>Tipo de Telefone</h6>
+                              <input type="text" id="novo-tipo-telefone-passo-02" class="form-control" placeholder="">                                                    
+                          </div>
+                          <div class="col-6 pt-3">
+                              <h6>DDD</h6>
+                              <input type="text" id="novo-ddd-passo-02" class="form-control" placeholder="">                                                    
+                          </div>
+                          <div class="col-6 pt-3">
+                              <h6>Número</h6>
+                              <input type="text" id="novo-numero-passo-02" class="form-control" placeholder="">                                                    
+                          </div>
+                          <div class="col-12 pt-3">
+                              <h6>Nome do Contato</h6>
+                              <input type="text" id="novo-nome-do-contato-passo-02" class="form-control" placeholder="">                                                    
+                          </div>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-primary">Salvar</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Modal E-mail -->
+      <div class="modal fade" id="newEmailModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">E-mail</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="row pt-3">
+                          <div class="col-12">
+                              <h6>Tipo de E-mail</h6>
+                              <input type="text" id="novo-tipo-email-passo-02" class="form-control" placeholder="">                                                    
+                          </div>
+                          <div class="col-12 pt-3">
+                              <h6>E-mail</h6>
+                              <input type="text" id="novo-email-passo-02" class="form-control" placeholder="">                                                    
+                          </div>
+                          <div class="col-12 pt-3">
+                              <h6>Envio Automático</h6>
                               <div class="form-check form-switch form-check">
                                   <input class="form-check-input me-0" type="checkbox" id="flexSwitchCheckReverse">
                               </div>                                                   
                           </div>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-primary">Salvar</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Modal Terceiro -->
+      <div class="modal fade" id="newTerceiroModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Novo Terceiro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row pt-3">
+                    <div class="col-12 col-lg-3">
+                      <h6>CPF/CNPJ</h6>
+                      <input type="text" id="passo-6-cpf-cnpj" class="form-control" placeholder="">
+                    </div>
+                    <div class="col-12 pt-3 col-lg-9 pt-lg-0">
+                      <h6>Nome</h6>
+                      <div class="d-flex gap-2">
+                        <input type="text" id="passo-6-nome" class="form-control" placeholder="">
+                        <button type="button" class="btn btn-primary">
+                          <i class="bi bi-search"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex pt-4 justify-content-between align-items-center">
+                    <h6 class="mb-0">Telefones</h6>
+                    <a  role="button" 
+                        class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <i class="bi bi-plus-circle"></i>
+                            Novo
+                    </a>
+                </div>
+                <hr class="mt-1 border-3 opacity-25">
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    <div class="row pt-3">
+                      <div class="col-12">
+                          <h6>Tipo de Telefone</h6>
+                          <input type="text" id="novo-tipo-telefone-passo-02" class="form-control" placeholder="">                                                    
+                      </div>
+                      <div class="col-6 pt-3">
+                          <h6>DDD</h6>
+                          <input type="text" id="novo-ddd-passo-02" class="form-control" placeholder="">                                                    
+                      </div>
+                      <div class="col-6 pt-3">
+                          <h6>Número</h6>
+                          <input type="text" id="novo-numero-passo-02" class="form-control" placeholder="">                                                    
+                      </div>
+                      <div class="col-12 pt-3">
+                          <h6>Nome do Contato</h6>
+                          <input type="text" id="novo-nome-do-contato-passo-02" class="form-control" placeholder="">                                                    
+                      </div>
+                      <div class="d-flex pt-3 justify-content-end">
+                        <button type="button" class="btn btn-primary">Salvar</button>
+                    </div>
+                  </div>  
+                  </div>
+                </div>
+                <!--  -->
+                <div class="grid-cards-add pt-3">
+                    <!--  -->
+                    <div class="card passo-02-card-1">
+                        <div class="card-body">
+                            <i class="bi bi-telephone"></i>
+                            <h6 class="card-title mt-0 mb-0 text-center">Residencial</h6>
+                            <p class="fs-7 pt-1 mb-0 fw-lighter text-center">(11) 4477-7744</p>
+                            <p class="fs-7 pt-1 mb-0 fw-regular text-center">Bootstrap Da Silva Santos</p>
+                            <div class="w-100 d-flex pt-2 justify-content-end">
+                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    <i class="bi bi-pencil-square"></i>
+                                </button>
+                            </div>
                         </div>
-                        <div class="row pt-3">
-                          <div class="col-12">
-                              <h6>Descrição</h6>
-                              <textarea class="form-control" id="passo-3-descricao-ocorrencia" rows="3"></textarea>
+                    </div>
+                    <div class="card passo-02-card-2">
+                        <div class="card-body">
+                            <i class="bi bi-telephone"></i>
+                            <h6 class="card-title mt-0 mb-0 text-center">Celular</h6>
+                            <p class="fs-7 pt-1 mb-0 fw-lighter text-center">(11) 99988-8899</p> 
+                            <p class="fs-7 pt-1 mb-0 fw-regular text-center">Bootstrap Company LTDA</p>
+                            <div class="w-100 d-flex pt-2 justify-content-end">
+                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    <i class="bi bi-pencil-square"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex pt-4 justify-content-between align-items-center">
+                  <h6 class="mb-0">E-mails</h6>
+                  <a  role="button" 
+                      class="btn btn-primary btn-sm"  data-bs-toggle="collapse" data-bs-target="#collapseExample-1" aria-expanded="false" aria-controls="collapseExample-1">
+                          <i class="bi bi-plus-circle"></i>
+                          Novo
+                  </a>
+              </div>
+              <hr class="mt-1 border-3 opacity-25">
+              <div class="collapse" id="collapseExample-1">
+                <div class="card card-body">
+                  <div class="row pt-3">
+                    <div class="col-12">
+                        <h6>Tipo de E-mail</h6>
+                        <input type="text" id="novo-tipo-email-passo-02" class="form-control" placeholder="">                                                    
+                    </div>
+                    <div class="col-12 pt-3">
+                        <h6>E-mail</h6>
+                        <input type="text" id="novo-email-passo-02" class="form-control" placeholder="">                                                    
+                    </div>
+                    <div class="col-12 pt-3">
+                        <h6>Envio Automático</h6>
+                        <div class="form-check form-switch form-check">
+                            <input class="form-check-input me-0" type="checkbox" id="flexSwitchCheckReverse">
+                        </div>                                                   
+                    </div>
+                    <div class="d-flex pt-3 justify-content-end">
+                      <button type="button" class="btn btn-primary">Salvar</button>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+              <!--  -->
+              <div class="grid-cards-add pt-3">
+                  <!--  -->
+                  <div class="card passo-02-card-1">
+                      <div class="card-body">
+                          <i class="bi bi-envelope"></i>
+                          <h6 class="card-title mt-0 mb-0 text-center">Pessoal</h6>
+                          <p class="fs-7 pt-1 mb-0 fw-lighter text-center">bootstrap@mail.com</p>
+                          <div class="form-check form-switch form-check-reverse d-flex flex-column-reverse justify-content-center align-items-center pe-0 pt-3">
+                              <input class="form-check-input form-check-input-disabled me-0" type="checkbox" id="flexSwitchCheckReverse">
+                              <label class="form-check-label fs-7" for="flexSwitchCheckReverse">Enviar automático?</label>
+                          </div>
+                          <div class="w-100 d-flex pt-2 justify-content-end">
+                              <button type="button" class="btn btn-primary btn-sm"  data-bs-toggle="collapse" data-bs-target="#collapseExample-1" aria-expanded="false" aria-controls="collapseExample-1">
+                                  <i class="bi bi-pencil-square"></i>
+                              </button>
                           </div>
                       </div>
-
+                  </div>
+                  <div class="card passo-02-card-2">
+                      <div class="card-body">
+                          <i class="bi bi-envelope"></i>
+                          <h6 class="card-title mt-0 mb-0 text-center">Comporativo</h6>
+                          <p class="fs-7 pt-1 mb-0 fw-lighter text-center">bootstrap@bootstrapcompany.com</p> 
+                          <div class="form-check form-switch form-check-reverse d-flex flex-column-reverse justify-content-center align-items-center pe-0 pt-3">
+                              <input class="form-check-input form-check-input-disabled me-0" type="checkbox" id="flexSwitchCheckReverse" checked>
+                              <label class="form-check-label fs-7" for="flexSwitchCheckReverse">Enviar automático?</label>
+                          </div>
+                          <div class="w-100 d-flex pt-2 justify-content-end">
+                              <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#collapseExample-1" aria-expanded="false" aria-controls="collapseExample-1">
+                                  <i class="bi bi-pencil-square"></i>
+                              </button>
+                          </div>
+                      </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary">Salvar</button>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Modal E-mail -->
-    <div class="modal fade" id="newEmailModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">E-mail</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                  <div class="row pt-3">
-                      <div class="col-12">
-                          <h6>Tipo de E-mail</h6>
-                          <input type="text" id="novo-tipo-email-passo-02" class="form-control" placeholder="">                                                    
-                      </div>
-                      <div class="col-12 pt-3">
-                          <h6>E-mail</h6>
-                          <input type="text" id="novo-email-passo-02" class="form-control" placeholder="">                                                    
-                      </div>
-                      <div class="col-12 pt-3">
-                          <h6>Envio Automático</h6>
-                          <div class="form-check form-switch form-check">
-                              <input class="form-check-input me-0" type="checkbox" id="flexSwitchCheckReverse">
-                          </div>                                                   
-                      </div>
-                  </div>
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-primary">Salvar</button>
-              </div>
-          </div>
       </div>
-  </div>
-  <!-- Modal Telefone -->
-  <div class="modal fade" id="newPhoneModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Telefone</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row pt-3">
-                    <div class="col-12">
-                        <h6>Tipo de Telefone</h6>
-                        <input type="text" id="novo-tipo-telefone-passo-02" class="form-control" placeholder="">                                                    
-                    </div>
-                    <div class="col-6 pt-3">
-                        <h6>DDD</h6>
-                        <input type="text" id="novo-ddd-passo-02" class="form-control" placeholder="">                                                    
-                    </div>
-                    <div class="col-6 pt-3">
-                        <h6>Número</h6>
-                        <input type="text" id="novo-numero-passo-02" class="form-control" placeholder="">                                                    
-                    </div>
-                    <div class="col-12 pt-3">
-                        <h6>Nome do Contato</h6>
-                        <input type="text" id="novo-nome-do-contato-passo-02" class="form-control" placeholder="">                                                    
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Salvar</button>
-            </div>
-        </div>
-    </div>
-</div>
- <!-- Modal Endereço -->
- <div class="modal fade" id="newEndressModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Endereço</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <div class="row pt-3">
-                  <div class="col-12">
-                      <h6>Tipo de Endereço</h6>
-                      <input type="text" id="endereco-tipo-passo-04" class="form-control" placeholder="">                                                    
-                  </div>
-                  <div class="col-6 pt-3">
-                      <h6>CEP</h6>
-                      <input type="text" id="endereco-cep-passo-04" class="form-control" placeholder="">                                                    
-                  </div>
-                  <div class="col-6 pt-3">
-                      <h6>Número</h6>
-                      <input type="text" id="endereco-numero-passo-04" class="form-control" placeholder="">                                                    
-                  </div>
-                  <div class="col-12 pt-3">
-                      <h6>Endereço</h6>
-                      <input type="text" id="endereco-endereco-passo-04" class="form-control" placeholder="">                                                    
-                  </div>
-                 
-                  <div class="col-12 pt-3">
-                      <h6>Complemento</h6>
-                      <input type="text" id="endereco-complemento-passo-04" class="form-control" placeholder="">                                                    
-                  </div>
-                  <div class="col-12 pt-3">
-                      <h6>Bairro</h6>
-                      <input type="text" id="endereco-bairro-passo-04" class="form-control" placeholder="">                                                    
-                  </div>
-                  <div class="col-12 pt-3">
-                      <h6>Cidade</h6>
-                      <input type="text" id="endereco-cidade-passo-04" class="form-control" placeholder="">                                                    
-                  </div>
-                  <div class="col-3 pt-3">
-                      <h6>UF</h6>
-                      <input type="text" id="endereco-uf-passo-04" class="form-control" placeholder="">                                                    
-                  </div>
-              </div>
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Salvar</button>
-          </div>
-      </div>
-  </div>
-</div>
-      <!-- scripts -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-      <script src="./scripts.js" type="text/javascript"></script>
+        <!-- scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="./scripts.js" type="text/javascript"></script>
+        
     </body>
 </html>

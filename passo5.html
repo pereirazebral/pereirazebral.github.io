@@ -124,7 +124,7 @@
                             </div>
                         </div>
                     </div>
-                    <h6 class="mb-0 pt-3">Número do Protocolo :</h6>
+                    <!-- <h6 class="mb-0 pt-3">Número do Protocolo :</h6> -->
                     <!--  -->
                     <div class="accordion accordion-04 no-icon pt-3 mb-3" id="accordion-04">
                         <!--  -->
@@ -141,7 +141,7 @@
                                     <div class="shadow p-3 mb-3 bg-body rounded">
                                         <!--  -->
                                         <div class="row">
-                                            <div class="col-12 col-lg-4"">
+                                            <!-- <div class="col-12 col-lg-4"">
                                                 <h6>A quem atribui a culpa?</h6>
                                                 <select id="select-culpa-passo-5" class="form-select" 
                                                     aria-label="type-safe select-culpa-passo-5">
@@ -151,7 +151,7 @@
                                                     <option value="3">Culpa 03</option>
                                                 </select>   
                                                 
-                                            </div>
+                                            </div> -->
                                             <!--  -->
                                             <!--  -->
                                         </div>
@@ -160,10 +160,14 @@
                                             <div class="col-12">
                                                 <h6>Contencioso?</h6>
                                                 <div class="form-check form-switch form-check">
-                                                    <input class="form-check-input me-0" type="checkbox" id="flexSwitchCheckReverse">
+                                                    <input class="form-check-input me-0" type="checkbox" id="contenciosoCheck" onclick="ContenciosoCheck();">
                                                 </div> 
                                             </div>
                                             <!--  -->
+                                           
+                                        </div>
+                                        <!--  -->
+                                        <div class="row pt-3 contencioso-check">
                                             <div class="col-12 pt-3">
                                                 <h6>N&deg; Processo</h6>
                                                 <input type="text" id="passo-5-n-processo" class="form-control" placeholder="">
@@ -173,10 +177,7 @@
                                                 <h6>Data do Processo</h6>
                                                 <input type="text" id="passo-5-n-processo" class="form-control" placeholder="DD/MM/YYYY">
                                             </div>
-                                        </div>
-                                        <!--  -->
-                                        <div class="row pt-3">
-                                            <div class="col-12">
+                                            <div class="col-12 pt-3">
                                                 <h6>Tipo de Processo</h6>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
@@ -197,19 +198,13 @@
                                             <div class="col-12">
                                                 <h6>Foi feito boletim de ocorrência?</h6>
                                                 <div class="form-check form-switch form-check">
-                                                    <input class="form-check-input me-0" type="checkbox" id="flexSwitchCheckReverse">
+                                                    <input class="form-check-input me-0" type="checkbox" id="boletimCheck" onclick="BoletimCheck();">
                                                 </div> 
                                             </div>
-                                            <div class="col-12 pt-3">
-                                                <h6>Origem</h6>
-                                                <select id="select-origem-passo-5" class="form-select" 
-                                                    aria-label="type-safe select-origem-passo-5">
-                                                    <option selected>Selecione uma Origem</option>
-                                                    <option value="1">Origem 01</option>
-                                                    <option value="2">Origem 02</option>
-                                                    <option value="3">Origem 03</option>
-                                                </select> 
-                                            </div>
+                                            
+                                            
+                                        </div>
+                                        <div class="row pt-3 boletim-check">
                                             <div class="col-12 pt-3">
                                                 <h6>N&deg; Boletim de Ocorrência?</h6>
                                                 <input type="text" id="passo-5-n-processo" class="form-control" placeholder="">

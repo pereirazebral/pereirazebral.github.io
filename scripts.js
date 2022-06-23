@@ -147,3 +147,30 @@ function onclickSearch(){
         }    
     })
 }
+
+function ContenciosoCheck(){
+    let value = document.querySelector(`#contenciosoCheck`).checked
+    if(value){
+        document.querySelector(`.contencioso-check`).classList.add('active')
+    }else{
+        document.querySelector(`.contencioso-check`).classList.remove('active')
+    }
+}
+
+function BoletimCheck(){
+    let value = document.querySelector(`#boletimCheck`).checked
+    if(value){
+        document.querySelector(`.boletim-check`).classList.add('active')
+    }else{
+        document.querySelector(`.boletim-check`).classList.remove('active')
+    }
+}
+
+function CoberturaCheck(item){
+    let value = document.querySelector(`#${item}`).checked
+    if(value){
+        document.querySelector(`.passo-6-selecionada`).classList.add('active')
+    }else{
+        document.querySelector(`.passo-6-selecionada`).classList.remove('active')
+    }
+}
