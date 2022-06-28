@@ -167,7 +167,7 @@ body{
     pointer-events: none;
     cursor: none;
     width: 100px;
-    height: 80px;
+    height: 120px;
 }
 .container-steps .card.active{
     pointer-events: initial;
@@ -194,6 +194,14 @@ body{
 
 .container-steps .card-body .card-title{
     font-size: 12px;
+    background-color: #183153;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 18px;
+    margin: 0;
+    color: #fff;
 }
 
 .container-steps .card-body .card-description{
@@ -257,6 +265,12 @@ body{
 
     .container-steps .card{
         width: 100%;
+    }
+
+    .protocolo-title{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 }
 
