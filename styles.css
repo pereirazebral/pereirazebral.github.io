@@ -219,6 +219,9 @@ body{
     width: 250px;
 }
 
+.passo6-mobile{
+    display: none;
+}
 
 
 @media(max-width:768px){
@@ -271,6 +274,23 @@ body{
         display: flex;
         flex-direction: column;
         gap: 10px;
+    }
+
+    .passo6-slide{
+        display: none;
+    }
+
+    .passo6-mobile{
+        display: block;
+    }
+
+    .passo6-mobile .card-body{
+        text-align: center;
+    }
+
+    .passo6-mobile .form-check {
+        display: flex;
+        justify-content: center;
     }
 }
 
