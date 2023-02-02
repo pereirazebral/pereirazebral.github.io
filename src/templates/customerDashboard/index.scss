@@ -1,0 +1,43 @@
+@import '../../root/variables';
+
+.bumblebee__menu-list-buttons{
+
+    li{
+        list-style: none;
+    }
+
+    .p-button-lg{
+        height: 64px;
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: none;
+
+        &:hover{
+            color: $--orange-22 !important;
+        }
+        
+
+        .p-button-label{
+            font-weight: 500;
+            font-size: 0.6rem;
+            text-align: center;
+        }
+
+        .p-button-icon{
+            margin-right: 0;
+        }
+    }
+
+    
+
+    .bumblebee__p-button__active{
+        background: rgba(0, 123, 255, 0.04);
+        color: $--orange-22 !important;
+        border-color: transparent;
+    }
+}
+
+.bumblebee__logo_min{
+    width: 50px;
+}
+
