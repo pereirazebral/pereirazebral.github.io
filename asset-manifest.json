@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6d1ccbe4.css",
-    "main.js": "/static/js/main.6c528fc1.js",
+    "main.css": "/static/css/main.133c7c2f.css",
+    "main.js": "/static/js/main.a2bde436.js",
     "static/js/787.3331b193.chunk.js": "/static/js/787.3331b193.chunk.js",
     "static/media/primeicons.svg": "/static/media/primeicons.e1441b135b3ca9ad643c.svg",
     "static/media/logo-desktop.png": "/static/media/logo-desktop.dc40e16427bdf4f57abe.png",
@@ -9,15 +9,15 @@
     "static/media/primeicons.woff": "/static/media/primeicons.10d3152104f2208ac82a.woff",
     "static/media/primeicons.ttf": "/static/media/primeicons.ea5358601d0a3fd6670b.ttf",
     "static/media/primeicons.woff2": "/static/media/primeicons.78172950b335ccdb94e2.woff2",
-    "static/media/logo-mobile.svg": "/static/media/logo-mobile.fad2904de82d2884721138d2b2f9f411.svg",
+    "static/media/logo-mobile.svg": "/static/media/logo-mobile.8ced24efa89aa2c55115648dd0156df4.svg",
     "static/media/company.svg": "/static/media/company.0dc95b31c0577138477d8e6db0bc9a3a.svg",
     "index.html": "/index.html",
-    "main.6d1ccbe4.css.map": "/static/css/main.6d1ccbe4.css.map",
-    "main.6c528fc1.js.map": "/static/js/main.6c528fc1.js.map",
+    "main.133c7c2f.css.map": "/static/css/main.133c7c2f.css.map",
+    "main.a2bde436.js.map": "/static/js/main.a2bde436.js.map",
     "787.3331b193.chunk.js.map": "/static/js/787.3331b193.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d1ccbe4.css",
-    "static/js/main.6c528fc1.js"
+    "static/css/main.133c7c2f.css",
+    "static/js/main.a2bde436.js"
   ]
 }
